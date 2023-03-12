@@ -1,0 +1,804 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Магазин европейской сантехники</title>
+  <link rel="stylesheet" href="/css/normalize.css">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/swiper-bundle.min.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+<body>
+  <header class="">
+    <div class="header container   d-flex align-items-center">
+      <a href="" class="header__logo logo">
+        <img src="./img/svg/logo.svg" alt="" class="logo__img">
+      </a>
+      <nav class="nav_usual d-flex justify-content-between col-5" aria-label="Базовая навигация">
+        <a href="tel:+79999999999" class="nav__call call">
+          <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M9.2168 4.02704C11.7553 4.7429 12.8692 5.66355 13.9736 8.7838" stroke="#6CDB7E"/>
+            <path d="M9.64844 1C13.8044 2.24486 15.5955 3.62443 16.9998 8.35135" stroke="#6CDB7E"/>
+            <path d="M1.36701 3.66002L2.49543 2.5316C2.86982 2.15721 3.47116 2.13954 3.8669 2.4913L6.33012 4.68083C6.73362 5.0395 6.77959 5.65369 6.43397 6.06842L5.40832 7.29921C5.10695 7.66085 5.09784 8.18441 5.39031 8.55329C6.80781 10.3412 7.85744 11.4818 9.85609 12.7177C10.2397 12.9549 10.7348 12.8868 11.0537 12.5679L11.5361 12.0855C11.9267 11.695 12.5598 11.695 12.9503 12.0855L14.9956 14.1307C15.3861 14.5213 15.3861 15.1544 14.9956 15.5449L13.952 16.5886C13.6976 16.8429 13.3234 16.941 12.9776 16.842C5.30428 14.6433 2.47876 11.9303 1.09275 4.5407C1.03276 4.22087 1.13691 3.89012 1.36701 3.66002Z" stroke="#6CDB7E"/>
+          </svg>                    
+        </a>
+        <a href="" class="nav__lk lk">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M6.875 24.375C9.79167 23.125 11.6667 22.0833 12.5 21.25C13.75 20 10 20 10 13.75C10 9.58333 11.6667 7.5 15 7.5C18.3333 7.5 20 9.58333 20 13.75C20 20 16.25 20 17.5 21.25C18.3333 22.0833 20.2083 23.125 23.125 24.375" stroke="#4798DE" stroke-width="2" stroke-linecap="round"/>
+            <path d="M15 27.5C21.9036 27.5 27.5 21.9036 27.5 15C27.5 8.09644 21.9036 2.5 15 2.5C8.09644 2.5 2.5 8.09644 2.5 15C2.5 21.9036 8.09644 27.5 15 27.5Z" stroke="#4798DE" stroke-width="2" stroke-linecap="square"/>
+          </svg>          
+        </a>
+        <a href="" class="nav__liked liked">
+          <svg width="23" height="22" viewBox="0 0 23 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M11.5007 19.875L9.99024 18.5262C4.62565 13.7544 1.08398 10.6073 1.08398 6.74489C1.08398 3.59775 3.60482 1.125 6.81315 1.125C8.62565 1.125 10.3652 1.95266 11.5007 3.26056C12.6361 1.95266 14.3757 1.125 16.1882 1.125C19.3965 1.125 21.9173 3.59775 21.9173 6.74489C21.9173 10.6073 18.3757 13.7544 13.0111 18.5364L11.5007 19.875Z" stroke="#4798DE" stroke-width="2" stroke-linecap="square"/>
+          </svg>
+        </a>
+        <a href="" class="nav__basket basket">
+          <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <path d="M7.5 7.5H26.2499L24.3749 18.75H9.37499L7.5 7.5Z" stroke="#4798DE" stroke-width="2" stroke-linecap="square"/>
+            <path d="M11.25 25C11.9403 25 12.5 24.4404 12.5 23.75C12.5 23.0596 11.9403 22.5 11.25 22.5C10.5596 22.5 10 23.0596 10 23.75C10 24.4404 10.5596 25 11.25 25Z" stroke="#4798DE" stroke-width="2" stroke-linecap="square"/>
+            <path d="M22.5 25C23.1903 25 23.75 24.4404 23.75 23.75C23.75 23.0596 23.1903 22.5 22.5 22.5C21.8096 22.5 21.25 23.0596 21.25 23.75C21.25 24.4404 21.8096 25 22.5 25Z" stroke="#4798DE" stroke-width="2" stroke-linecap="square"/>
+            <path d="M7.49998 7.5H3.75" stroke="#4798DE" stroke-width="2" stroke-linecap="square"/>
+          </svg>          
+        </a>
+        <button class="nav__fullNav burger">
+          <svg width="20" height="16" viewBox="0 0 20 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <line y1="15" x2="20" y2="15" stroke="#6F7682" stroke-width="2"/>
+            <line y1="8" x2="20" y2="8" stroke="#6F7682" stroke-width="2"/>
+            <line y1="1" x2="20" y2="1" stroke="#6F7682" stroke-width="2"/>
+          </svg>
+        </button>
+      </nav>
+    </div>
+  </header>
+  <main class="main">
+    <section class="catalogue container   d-flex justify-content-between">
+      <a href="" class="usual-link d-flex  ">
+        <img src="./img/svg/catalogueBtn.svg" class="catalogue__btn_img" alt="">
+        <p class="catalogue__btn_text">Каталог товаров</p> 
+      </a>
+      <form action="" method="get" class="catalogue__search d-flex">
+        <input type="text" class="search__input"  placeholder="Поиск товаров и брендов">
+        <input type="submit" class="search__btn" value="">
+      </form>
+    </section>
+    <div id="carouselExample" class="carousel slide hero">
+      <div class="carousel-inner">
+        <div class="carousel-item active hero_1">
+          <img src="./img/1440_SLIDER_1_1X.jpg" class="d-block w-100" alt="...">
+          <div class="hero__info_1 col-5">
+            <p class="hero__text_1">Скидки на мебель для ванной комнаты </p>
+            <p class="hero__sale_1">До 10%</p>
+            <a href="" class="btn">Подробнее</a>
+          </div>
+        </div>
+        <div class="carousel-item hero_2">
+          <img src="./img/1440_SLIDER_1_1X.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item hero_3">
+          <img src="./img/1440_SLIDER_1_2X.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item hero_4">
+          <img src="./img/1440_SLIDER_1_2X.jpg" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item hero_5">
+          <img src="./img/1440_SLIDER_1_2X.jpg" class="d-block w-100" alt="...">
+        </div>
+      </div>
+      <button class="control_prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Предыдущий</span>
+      </button>
+      <button class="control_next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Следующий</span>
+      </button>
+      <div class="carousel-indicators">
+        <button class="active carousel__indic" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" aria-current="true" aria-label="Slide 1"></button>
+        <button class="carousel__indic" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button class="carousel__indic" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        <button class="carousel__indic" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="3" aria-label="Slide 4"></button>
+        <button class="carousel__indic" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      </div>
+    </div>
+    <section class="stock container  ">
+      <div class="head stock__head d-flex justify-content-between">
+        <h2 class="title stock__title">
+          Акции
+        </h2>
+        <a href="" class="usual-link usual-link_right">Все акции</a>
+        <span class="title_decor ">Stock</span>
+      </div>
+      <div class="swiper stockSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_stock_1_2x.jpg" alt="">
+          </div>
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_stock_2_2x.jpg" alt="">
+          </div>
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_stock_3_2x.jpg" alt="">
+          </div>
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_stock_1_2x.jpg" alt="">
+          </div>
+        </div>
+        <div class="d-flex align-items-center stock__nav-wrapper">
+          <div class="stock__button_prev"></div>
+          <div class="swiper-pagination"></div>
+        <div class="stock__button_next"></div></div>
+      </div>
+    </section>
+    <section class="categories container  ">
+      <div class="head catogories__head d-flex justify-content-between">
+        <h2 class="title catogories__title">
+          Популярные категории  
+        </h2>
+        <span class="title_decor">Categories</span>
+      </div>
+      <ul class="categories__list row">
+        <div class="col-6 d-flex" >
+          <li class="categories__item categories__item_1 w-100">
+              <div class="categories__img categories__img_1"></div>
+              <a class="categories__link" href=""><p class="categories__name">  РАКОВИНЫ</p></a>
+          </li>
+        </div>
+        <div class="col-6 d-flex" >
+          <li class="categories__item categories__item_2 w-100">
+              <div class="categories__img categories__img_2"></div>
+              <a class="categories__link" href=""><p class="categories__name">  УНИТАЗЫ</p></a>
+          </li>
+        </div>
+        <div class="col-6 d-flex" >
+          <li class="categories__item categories__item_3 w-100">
+              <div class="categories__img categories__img_3"></div>
+              <a class="categories__link" href=""><p class="categories__name">  СМЕСИТЕЛИ</p></a>
+          </li>
+        </div>
+        <div class="col-6 d-flex" >
+          <li class="categories__item categories__item_4 w-100">
+              <div class="categories__img categories__img_4"></div>
+              <a class="categories__link" href=""><p class="categories__name">  СИСТЕМЫ ИНСТАЛЯЦИИ</p></a>
+          </li>
+        </div>
+        <div class="col-6 d-flex" >
+          <li class="categories__item categories__item_5 w-100">
+              <div class="categories__img categories__img_5"></div>
+              <a class="categories__link" href=""><p class="categories__name">  ВАННЫ</p></a>
+          </li>
+        </div>
+        <div class="col-6 d-flex" >
+          <li class="categories__item categories__item_6 w-100">
+              <div class="categories__img categories__img_6"></div>
+              <a class="categories__link" href=""><p class="categories__name">  МЕБЕЛЬ ДЛЯ ВАННЫХ КОМНАТ</p></a>
+          </li>
+        </div>
+        <div class="col-6 d-flex">   
+          <li class="categories__item categories__item_7 w-100">
+              <div class="categories__img categories__img_7"></div>
+              <a class="categories__link" href=""><p class="categories__name">  ДУШЕВЫЕ УГЛЫ И ОГРАЖДЕНИЯ</p></a>
+          </li>
+        </div>
+        <div class="col-6 d-flex" >
+          <li class="categories__item categories__item_8 w-100">
+              <div class="categories__img categories__img_8"></div>
+              <a class="categories__link" href=""><p class="categories__name">  АКСЕССУАРЫ ДЛЯ ВАНН </p></a>
+          </li>
+        </div>
+      </ul>
+    </section>
+    <section class="best container  ">
+      <div class="head catogories__head d-flex justify-content-between">
+        <h2 class="title catogories__title">
+          Хиты продаж
+        </h2>
+        <span class="title_decor">Bestsellers</span>
+      </div>
+
+      <div class="swiper bestSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="best__name card__name">Наименование</span>
+            <span class="best__brand card__brand">Бренд</span>
+            <span class="best__country card__country">Страна</span>
+            <div class="best__inStock card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="best__name card__name">Наименование</span>
+            <span class="best__brand card__brand">Бренд</span>
+            <span class="best__country card__country">Страна</span>
+            <div class="best__inStock card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="best__name card__name">Наименование</span>
+            <span class="best__brand card__brand">Бренд</span>
+            <span class="best__country card__country">Страна</span>
+            <div class="best__inStock card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="best__name card__name">Наименование</span>
+            <span class="best__brand card__brand">Бренд</span>
+            <span class="best__country card__country">Страна</span>
+            <div class="best__inStock card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide">
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="best__name card__name">Наименование</span>
+            <span class="best__brand card__brand">Бренд</span>
+            <span class="best__country card__country">Страна</span>
+            <div class="best__inStock card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+     <aside class="best__plus plus">
+      <h5 class="plus_subtitle">Мы не просто продаем товары для ванной - мы помогаем вам найти лучшее решение.</h5>
+      <ul class="plus__list row d-flex justify-content-between">
+        <li class="plus__item col-6 col-md-3">
+          <p class="plus__strong">30</p>
+          <p class="plus__text">брендов работают с нами</p>
+        </li>
+        <li class="plus__item col-6 col-md-3">
+          <p class="plus__strong">2К</p>
+          <p class="plus__text">наименований продукции</p>
+        </li>
+        <li class="plus__item col-6 col-md-3 d-flex flex-column">
+          <h6 class="plus__title">Доставка
+            <span class="plus__svg plus__svg_del"></span>
+          </h6>
+          <p class="plus__text">Доставим товар в удобное для вас время
+        </p>
+        </li>
+        <li class="plus__item col-6 col-md-3 d-flex flex-column">
+          <h6 class="plus__title">САМОВЫВОЗ
+            <span class="plus__svg plus__svg_sam"></span>
+          </h6>
+          <p class="plus__text">
+            Вы можете самостоятельно забрать заказ в пункте самовывоза.
+          </p>
+        </li>
+        <li class="plus__item col-6 col-md-3 d-flex flex-column">
+          <h6 class="plus__title">КЛИЕНТСКИЙ СЕРВИС
+            <span class="plus__svg plus__svg_ser"></span>
+          </h6>
+          <p class="plus__text">
+            Оказываем поддержку на всех этапах покупки товара
+          </p>
+        </li>
+        <li class="plus__item col-6 col-md-3 d-flex flex-column">
+          <h6 class="plus__title">ГАРАНТИЯ КАЧЕСТВА
+            <span class="plus__svg plus__svg_gar"></span>
+          </h6>
+          <p class="plus__text">
+            Соответствуем требованиям и стандартам качества
+          </p>
+        </li>
+        <li class="plus__item col-6 col-md-3 d-flex flex-column">
+          <h6 class="plus__title">АКЦИИ И СКИДКИ
+            <span class="plus__svg plus__svg_akc"></span>
+          </h6>
+          <p class="plus__text">
+            Постоянным клиентам акции и скидки
+          </p>
+        </li>
+        <li class="plus__item col-6 col-md-3 d-flex flex-column">
+          <h6 class="plus__title">ШИРОКИЙ АССОРТИМЕНТ ТОВАРОВ
+            <span class="plus__svg plus__svg_shi"></span>
+          </h6>
+          <p class="plus__text">
+            У нас найдется все 
+          </p>
+        </li>
+      </ul>
+     </aside>
+    </section>
+    <section class="new container  ">
+      <div class="head new__head d-flex justify-content-between">
+        <h2 class="title new__title">
+          Новинки
+        </h2>
+        <span class="title_decor">New items</span>
+      </div>
+      <div class="swiper newSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide new__swiper-slide ">
+            <p class="hit-sign new__hit-sign">ХИТ ПРОДАЖ</p>
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide new__swiper-slide">
+            <p class="hit-sign new__hit-sign">ХИТ ПРОДАЖ</p>
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide new__swiper-slide">
+            <p class="hit-sign new__hit-sign">ХИТ ПРОДАЖ</p>
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide new__swiper-slide">
+            <p class="hit-sign new__hit-sign">ХИТ ПРОДАЖ</p>
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide new__swiper-slide">
+            <p class="hit-sign new__hit-sign">ХИТ ПРОДАЖ</p>
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="sec-nav container  ">
+      <div class="swiper secNavSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide sec-nav__item sec-nav__brands"> 
+            <a class="sec-nav__link" href="">
+              БРЕНДЫ
+            </a>
+          </div>
+          <div class="swiper-slide sec-nav__item sec-nav__sales"> 
+            <a class="sec-nav__link" href="">
+              АКЦИИ
+            </a>
+          </div>
+          <div class="swiper-slide sec-nav__item sec-nav__pay"> 
+            <a class="sec-nav__link" href="">
+              ОПЛАТА
+            </a>
+          </div>
+          <div class="swiper-slide sec-nav__item sec-nav__baths"> 
+            <a class="sec-nav__link" href="">
+              ВАННЫ ROCA
+            </a>
+          </div>
+          <div class="swiper-slide sec-nav__item sec-nav__gifts"> 
+            <a class="sec-nav__link" href="">
+              ДАРИМ ПОДАРКИ
+            </a>
+          </div>
+          <div class="swiper-slide sec-nav__item sec-nav__choice"> 
+            <a class="sec-nav__link" href="">
+              ВЫБРАТЬ ВАННУ
+            </a>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+    </section>
+    <section class="sales container  ">
+      <div class="head sales__head d-flex justify-content-between">
+        <h2 class="title sales__title">
+          Скидки
+        </h2>
+        <span class="title_decor">Discounts</span>
+      </div>
+      <div class="swiper salesSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide sales__swiper-slide ">
+            <p class="hit-sign sales__hit-sign">-30 %</p>
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide sales__swiper-slide">
+            <p class="hit-sign sales__hit-sign">-30 %</p>
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide sales__swiper-slide">
+            <p class="hit-sign sales__hit-sign">-30 %</p>
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide sales__swiper-slide">
+            <p class="hit-sign sales__hit-sign">-30 %</p>
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide sales__swiper-slide">
+            <p class="hit-sign sales__hit-sign">-30 %</p>
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      <div class="swiper salesBrandsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_saleBrandArc_2x.jpg" alt="">
+          </div>
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_saleBrandJD_2x.jpg" alt="">
+          </div>
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_saleBrandWK_2x.jpg" alt="">
+          </div>
+          <div class="swiper-slide stockSwiper__slide">
+            <img src="/img/1440_saleBrandArc_2x.jpg" alt="">
+          </div>
+        </div>
+        <div class="d-flex align-items-center stock__nav-wrapper">
+          <div class="stock__button_prev"></div>
+          <div class="swiper-pagination"></div>
+        <div class="stock__button_next"></div></div>
+      </div>
+    </section>
+    <section class="recomendation container  ">
+      <div class="head recomendation__head d-flex justify-content-between">
+        <h2 class="title recomendation__title">
+          Рекомендованные товары
+        </h2>
+        <span class="title_decor">Recomendation</span>
+      </div>
+      <div class="swiper recomendationSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide recomendation__swiper-slide ">
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide recomendation__swiper-slide">
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide recomendation__swiper-slide">
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide recomendation__swiper-slide">
+            <img src="/img/1440_cron_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+          <div class="swiper-slide recomendation__swiper-slide">
+            <img src="/img/1440_Duofix_2x.jpg" alt="">
+            <span class="card__name">Наименование</span>
+            <span class="card__brand">Бренд</span>
+            <span class="card__country">Страна</span>
+            <div class="card__inStock d-flex align-items-center justify-content-between">
+              <span class="inStock__text card__text">В наличии</span><span class="v"></span>
+            </div>
+            <div class="price d-flex justify-content-between w-100">
+              <span class="price__num">15 000 ₽</span> 
+              <div class="price__btns d-flex justify-content-between">
+                <button class="price__liked liked"></button>
+                <a href class="price__compare compare"></a>
+              </div>
+            </div>
+            <button class="btn">В корзину</button>
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
+      </section>
+      <section class="brands container  ">
+        <div class="head brands__head d-flex justify-content-between">
+          <h2 class="title brands__title">
+            Популярные бренды
+          </h2>
+          <a href="" class="usual-link usual-link_right">Все бренды</a>
+          <span class="title_decor">Brands</span>
+        </div>
+      <div class="swiper recomendationBrandsSwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide stockSwiper__slide slide__brand">
+            <img src="/img/svg/logoAMPM.svg" alt="" style="padding-top:20px">
+          </div>
+          <div class="swiper-slide stockSwiper__slide slide__brand">
+            <img src="/img/svg/logoAparici.svg" alt="" style="padding-top:20px" >
+          </div>
+          <div class="swiper-slide stockSwiper__slide slide__brand">
+            <img src="/img/svg/logoBoch.svg" alt="">
+          </div>
+          <div class="swiper-slide stockSwiper__slide slide__brand">
+            <img src="/img/svg/logoDelafon.svg" alt="" style="padding-top:15px">
+          </div>
+          <div class="swiper-slide stockSwiper__slide slide__brand">
+            <img src="/img/svg/logoGrohe.svg" alt="" style="padding-top:10px">
+          </div>
+          <div class="swiper-slide stockSwiper__slide slide__brand">
+            <img src="/img/svg/logoHans.svg" alt="" style="padding-top:30px">
+          </div>
+        </div>
+        <div class="d-flex align-items-center stock__nav-wrapper">
+          <div class="stock__button_prev"></div>
+          <div class="swiper-pagination"></div>
+        <div class="stock__button_next"></div></div>
+      </div>
+    </section>
+  <section class="events container  ">
+    <div class="head events__head d-flex justify-content-between">
+      <h2 class="title events__title">
+        Новости и события
+      </h2>
+      <span class="title_decor">News and events</span>
+    </div>
+    <div class="swiper eventsSwiper">
+    <div class="swiper-wrapper ">
+      <div class="swiper-slide stockSwiper__slide events__slide d-flex flex-row">
+        <div class="events__left">
+          <button class="btn events__btn">Перейти в раздел</button>
+        </div>
+        <div class="events__right">
+          <h5 class="events__subtitle">Новые поступления ванных.</h5>
+          <p class="events__text">Что может быть лучше расслабляющей ванны после тяжолого рабочего дня?
+            У нас новые постепления, найдется ванна на любой вкус.</p>
+        </div>
+      </div>
+      <div class="swiper-slide stockSwiper__slide events__slide d-flex flex-row">
+        <div class="events__left">
+          <button class="btn events__btn">Перейти в раздел</button>
+        </div>
+        <div class="events__right">
+          <h5 class="events__subtitle">Новые поступления ванных.</h5>
+          <p class="events__text">Что может быть лучше расслабляющей ванны после тяжолого рабочего дня?
+            У нас новые постепления, найдется ванна на любой вкус.</p>
+        </div>
+      </div>
+      
+    </div>
+    <div class="d-flex align-items-center stock__nav-wrapper">
+      <div class="stock__button_prev"></div>
+      <div class="swiper-pagination"></div>
+    <div class="stock__button_next"></div></div>
+    </div>
+  </section>
+  </main>
+  <footer class="footer"></footer>
+
+
+<script src="/js/swiper-bundle.min.js"></script>
+<script src="/js/bootstrap.bundle.min.js"></script>
+<script src="/js/main.js"></script>
+</body>
+</html>
